@@ -74,18 +74,16 @@
         .box-4{
             border: 2px solid black;
             width: 600px;
-            height: 300px;
-            position: relative;
-            
+            height: 250px;
+            position: relative;  
         }
         .left, .right{
             width: 200px;
             height: 150px;
             border: 1px solid black;
-            position: absolute;
+            position: absolute;    /*after removing the position the cards back to their normal flow */
             box-sizing: border-box;
             text-align: center;
-            
         }
         .left{
             left: 20px;
@@ -99,6 +97,46 @@
             z-index: 1;
             background: yellow;
             
+        }
+        .box-5 {
+            border: 2px solid black;
+            width: 600px;
+            height: 400px;
+            position: relative;
+        }
+        .wrapper {
+        transform: scale(1);
+        } 
+        .right-5{
+            left: 160px;
+            top: 100px;
+            background: yellow;
+            z-index: 9999;
+        }  
+        .box-6 {
+            width: 600px;
+            height: 300px;
+            border: 2px solid black;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .menu-button {
+            margin: 20px;
+        }
+
+        .menu {
+            position: absolute;
+            top: 70px;
+            left: 20px;
+
+            width: 150px;
+            border: 2px solid black;
+            background: white;
+        }
+
+        .menu div {
+            padding: 15px;
         }
     </style>
 </head>
@@ -164,6 +202,24 @@
         <h2>Module 1.4</h2>
         <div class="left">Left Card</div>
         <div class="right">Right Card</div>
+    </div>
+    <div class="box-5">
+        <h2>Module 1.5</h2>
+        <div class="left">Left Card</div>
+        <div class="wrapper">
+            <div class="right">Right Card</div>
+        </div>
+    </div>
+    <div class="box-6">
+        <h2>Module 1.5</h2>
+        <button class="menu-button">Menu</button>
+        <div class="menu">
+            <div>Item 1</div>
+            <div>Item 2</div>
+            <div>Item 3</div>
+            <div>Item 4</div>
+            <div>Item 5</div>
+        </div>
     </div>
 </body>
 </html>
