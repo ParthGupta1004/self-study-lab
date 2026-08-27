@@ -36,12 +36,12 @@ export default function Modal({ isOpen, onClose, title, children }) {
 
 
   return (
-    <div
+    <div //test 2 use abosulte instead of fixed and test 3 for stacking behaviour
       onClick={onClose}
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4"
     >
 
-      <div
+      <div //test 1 here we remove the stopPropogation to check the model still close to click inside the box
         onClick={(e) => e.stopPropagation()}
         className="w-full max-w-lg rounded-xl bg-white shadow-xl"
       >

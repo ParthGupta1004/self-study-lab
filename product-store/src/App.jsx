@@ -8,7 +8,6 @@ function App() {
   return (
     <div className="p-10">
 
-      {/* Logo + heading */}
       <div className="flex items-center gap-3">
         <img
           src="/images.jpeg"
@@ -22,7 +21,6 @@ function App() {
       </div>
 
 
-      {/* Existing icons */}
       <div className="mt-8 flex gap-6">
 
         <button className="flex items-center gap-2">
@@ -43,7 +41,6 @@ function App() {
       </div>
 
 
-      {/* Modal button */}
       <button
         onClick={() => setIsOpen(true)}
         className="mt-8 rounded-lg bg-teal-700 px-5 py-3 text-white hover:bg-teal-800"
@@ -52,7 +49,6 @@ function App() {
       </button>
 
 
-      {/* Modal */}
       <Modal
         isOpen={isOpen}
         onClose={() => setIsOpen(false)}
