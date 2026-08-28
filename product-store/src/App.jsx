@@ -1,6 +1,7 @@
 import { Navigate, Route, Routes } from "react-router-dom"
 
 import RootLayout from "./layouts/RootLayout"
+import KeysLab from "./pages/KeysLab"
 
 import ProductsPage from "./pages/ProductsPage"
 import ProductDetailPage from "./pages/ProductDetailPage"
@@ -26,31 +27,26 @@ function App() {
 
       <Route element={<RootLayout />}>
 
-        {/* Home → Products */}
         <Route
           path="/"
           element={<Navigate to="/products" replace />}
         />
 
-        {/* Products */}
         <Route
           path="/products"
           element={<ProductsPage />}
         />
 
-        {/* Product Details */}
         <Route
           path="/products/:id"
           element={<ProductDetailPage />}
         />
 
-        {/* Cart */}
         <Route
           path="/cart"
           element={<CartPage />}
         />
 
-        {/* Protected Admin */}
         <Route
           path="/admin"
           element={
@@ -60,7 +56,11 @@ function App() {
           }
         />
 
-        {/* 404 */}
+        <Route
+          path="/keys-lab"
+          element={<KeysLab />}
+        />
+
         <Route
           path="*"
           element={<NotFoundPage />}
