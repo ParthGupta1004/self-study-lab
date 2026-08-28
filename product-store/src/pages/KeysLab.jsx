@@ -1,5 +1,6 @@
 import {useState} from "react"
-
+// the main learning of this project is that always use product id insetad of key because when we apply filter or something else which chnages position so it mapps to the wrong 
+//product which causes wrong answers or wrong output.
 const initialProducts = [
     {id: 1, name: "Laptop", price: 50000},
     {id: 2, name: "Phone", price: 30000},
